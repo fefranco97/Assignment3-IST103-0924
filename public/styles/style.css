@@ -140,3 +140,53 @@ footer {
 #backTotopBtn:hover {
   background-color: blue;
 }
+
+@media only screen and (max-width: 769px) {
+  .hero-text {
+    width: 50%;
+  }
+
+  .benefitsContent {
+    flex-direction: column;
+  }
+
+  .figure-card {
+    padding: 1rem;
+    width: calc(100vw - 5rem);
+    align-self: center;
+  }
+
+  .figure-card > figcaption {
+    margin: 1rem 0.25rem;
+    text-align: left;
+    width: calc(100vw - 7rem);
+  }
+
+  .personalContent,
+  .rulesContent {
+    flex-direction: column;
+  }
+  .rulesContent > article {
+    margin: 0 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #personalExperience > div > figure > img,
+  #rules > div > figure > img,
+  #benefits > div > figure > img {
+    width: 100%;
+  }
+
+  .hero-text {
+    width: 90%;
+  }
+
+  nav {
+    padding: 1rem 1.25rem 1.25rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    text-align: center;
+  }
+}
